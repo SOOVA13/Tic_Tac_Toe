@@ -90,12 +90,12 @@ def play(game, x_player, o_player, print_game=True):
         time.sleep(.8)
 
     if print_game:
-        print('It\'s a tie!')
+        print('Its a draw, try again!')
 
 
 
 if __name__ == '__main__':
-    x_player = SmartComputerPlayer('X')
-    o_player = HumanPlayer('O')
+    x_player = HumanPlayer('X')
+    o_player = SmartComputerPlayer('O')
     t = TicTacToe()
     play(t, x_player, o_player, print_game=True)
